@@ -1,6 +1,23 @@
+# Python
 venv/
 __pycache__/
 *.pyc
+*.pyo
 *.sqlite3
 *.log
 .env
+
+# Django Migrations Cache
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# React Native
+node_modules/
+.expo/
+build/
+dist/
+*.log
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
