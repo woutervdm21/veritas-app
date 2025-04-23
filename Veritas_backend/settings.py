@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'church', #Church App
-     'rest_framework' #Django REST framework
+    'rest_framework', #Django REST framework
     'rest_framework_simplejwt' #JWT AUTH,
 ]
 
@@ -126,6 +126,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',  # Use JWT for auth
+        'rest_framework',
+        'rest_framework_simplejwt',  # Use JWT for auth
     ),
 }
